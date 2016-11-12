@@ -379,3 +379,8 @@ background-color:#2b2b2b;
     line-height: 25px;
     text-align: center;
 }
+.profpic {
+    border-radius: 50%;
+    width: 218px;
+    height: 218px;
+}
