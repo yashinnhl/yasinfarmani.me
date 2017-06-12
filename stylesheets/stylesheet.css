@@ -354,11 +354,11 @@ a:hover, a:focus {
 	display: inline-block;
 }
 .mainMenu li a{	
-       display: inline-block;
-    margin-right: 30px;
-    margin-left: 10px;
-    cursor: pointer;
-    color: #fff;
+      display: inline-block;
+      cursor: pointer;
+      color: #fff;
+      height: 71px;
+      width: 142px;
 }
 .footer {
 background-color:#2b2b2b;
