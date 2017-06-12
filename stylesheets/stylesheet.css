@@ -384,3 +384,6 @@ background-color:#2b2b2b;
     width: 218px;
     height: 218px;
 }
+.section{
+	min-height: 400px;
+}
