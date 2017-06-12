@@ -71,24 +71,22 @@
 		   alert('welcome');
 		});
 	    $('.mainMenu li a').click(function(){
-		    switch ($(this).text()) {
-    case About Me:
-        alert('about');
-        break;
-    case Portfolios:
-        alert('port');
-        break;
-    case Publications:
-        alert('pub');
-        break;
-    case Work Experince:
-        alert('we');
-        break;
-    case Contact Me:
-        alert('contsct');
-        break;
-          }
-	    });
+		    if($(this).text() == "About Me"){
+		            alert('about');
+		    }
+		    if($(this).text() == "Portfolios"){
+		            alert('port');
+		    }
+		       if($(this).text() == "Publications"){
+		            alert('Publications');
+		    }
+		        if($(this).text() == "Work Experince"){
+		            alert('Work experince');
+		    }
+		         if($(this).text() == "Contact Me"){
+		            alert('Contact Me');
+		    }
+		    });
 	</script>
 </body>
 </html>
