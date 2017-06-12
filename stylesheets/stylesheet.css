@@ -359,6 +359,7 @@ a:hover, a:focus {
       color: #fff;
       height: 71px;
       width: 142px;
+	transition: all linear 1s;
 }
 .footer {
 background-color:#2b2b2b;
