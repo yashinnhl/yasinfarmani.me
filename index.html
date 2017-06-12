@@ -79,6 +79,8 @@
 		   alert('welcome');
 		});
 	    $('.mainMenu li a').click(function(){
+		    $('.mainMenu li a').removeClass("selected");
+		    $(this).addClass("selected");
 		    if($(this).text() == "About Me"){
 		             $('html, body').animate({
                                scrollTop: 0
