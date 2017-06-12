@@ -359,7 +359,11 @@ a:hover, a:focus {
       color: #fff;
       height: 71px;
       width: 142px;
-	transition: all linear 1s;
+	transition: all ease-in-out .2s;
+}
+.mainMenu li a:hover{
+color: #42d1d8;
+transition: all ease-in-out .2s;
 }
 .footer {
 background-color:#2b2b2b;
@@ -394,6 +398,7 @@ height: 71px;
 width: 142px;
 line-height: 66px;
 position: relative;
+	transition: all ease-in-out .2s;
 }
 .selected::after{
 content: "";
