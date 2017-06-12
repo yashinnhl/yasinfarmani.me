@@ -395,6 +395,7 @@ background-color:#2b2b2b;
 position:relative;
 }
 .selected::after{
+content:"";
 width: 0;
 height: 0;
 border-left: 45px solid transparent;
@@ -403,7 +404,6 @@ border-top: 8px solid #00998e;
 position: absolute;
 top: 71px;
 right: -33px;
-margin-right: 34px;
 }
 	
 	
