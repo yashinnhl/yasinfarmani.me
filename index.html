@@ -17,7 +17,7 @@
 			<li><a href="#">Contact Me</a></li>
 		</ul>
 	</div>
-	<div class="col-l12 fullback section">
+	<div class="col-l12 fullback section" id="about">
 		<div class="col-l5">
 			<div class="col-l12 leftContent CentreAlighn">
 				<div class="col-l12">
@@ -72,19 +72,29 @@
 		});
 	    $('.mainMenu li a').click(function(){
 		    if($(this).text() == "About Me"){
-		            alert('about');
+		             $('html, body').animate({
+                               scrollTop: $("#about").offset().top
+                             }, 2000);
 		    }
 		    if($(this).text() == "Portfolios"){
-		            alert('port');
+		            $('html, body').animate({
+                               scrollTop: $("#portfolio").offset().top
+                             }, 2000);
 		    }
 		       if($(this).text() == "Publications"){
-		            alert('Publications');
+		            $('html, body').animate({
+                               scrollTop: $("#publication").offset().top
+                             }, 2000);
 		    }
 		        if($(this).text() == "Work Experince"){
-		            alert('Work experince');
+		             $('html, body').animate({
+                               scrollTop: $("#wExperince").offset().top
+                             }, 2000);
 		    }
 		         if($(this).text() == "Contact Me"){
-		            alert('Contact Me');
+		               $('html, body').animate({
+                               scrollTop: $("#contact").offset().top
+                             }, 2000);
 		    }
 		    });
 	</script>
