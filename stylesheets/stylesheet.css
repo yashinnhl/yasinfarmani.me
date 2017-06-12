@@ -388,22 +388,22 @@ background-color:#2b2b2b;
 	min-height:400px;
 }
 .selected{
- background-color: #00998e;
- height: 71px;
- width: 91px;
- line-height: 66px;
-position:relative;
+background-color: #00998e;
+height: 71px;
+width: 142px;
+line-height: 66px;
+position: relative;
 }
 .selected::after{
-content:"";
+content: "";
 width: 0;
 height: 0;
-border-left: 45px solid transparent;
-border-right: 44px solid transparent;
-border-top: 8px solid #00998e;
+border-left: 70px solid transparent;
+border-right: 70px solid transparent;
+border-top: 11px solid #00998e;
 position: absolute;
 top: 71px;
-right: 1px;
+right: 2px;
 }
 	
 	
