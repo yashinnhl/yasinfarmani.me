@@ -71,7 +71,23 @@
 		   alert('welcome');
 		});
 	    $('.mainMenu li a').click(function(){
-	        alert($(this).text() + 'clicked!');
+		    switch ($(this).text()) {
+    case About Me:
+        alert('about');
+        break;
+    case Portfolios:
+        alert('port');
+        break;
+    case Publications:
+        alert('pub');
+        break;
+    case Work Experince:
+        alert('we');
+        break;
+    case Contact Me:
+        alert('contsct');
+        break;
+}
 	    });
 	</script>
 </body>
