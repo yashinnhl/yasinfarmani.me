@@ -392,13 +392,18 @@ background-color:#2b2b2b;
  height: 71px;
  width: 91px;
  line-height: 66px;
+position:relative;
 }
 .selected::after{
- width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent; 
-  border-top: 20px solid #f00;
+ width: 0;
+height: 0;
+border-left: 45px solid transparent;
+border-right: 44px solid transparent;
+border-top: 8px solid #00998e;
+position: absolute;
+top: 71px;
+right: -33px;
+margin-right: 34px;
 }
 	
 	
