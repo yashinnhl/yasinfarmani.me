@@ -9,6 +9,7 @@
 </head>
 <body>
 	<div class="col-l12 header Reset">
+   <i class="fa fa-bars" aria-hidden="true" id="menuSandwitch"></i>
 		<ul class="inline-block mainMenu">
 			<li><a href="#" id="aboutme" class="selected">About Me</a></li>
 			<li><a href="#" id="lnkportfolios">Portfolios</a></li>
@@ -59,7 +60,7 @@
 		</div>
 	 </div>
 	 <div class="col-l12 section Reset" id="publication" >
-     <div class="col-l12 sectionBar"><h1 class="Reset sectionTitle">Publications</h1></div>
+     <div class="col-l12 sectionBar"><h1 class="Reset sectionTitle">Publications and Certificates</h1></div>
 		<div class="container">
 		  <div class="col-l12">
              <ul class="col-l12 pub">
@@ -72,9 +73,15 @@
                 ”Deciphering the Glyco codes by Bioinformatics Analysis “ authors : Mohamad Sadraeian , DR Hossein Honari , Yasin Farmani , Imam Hossein University , Shomal University ,Kusadasi , Turkey , symposium of computing in science and Engineering ;
                 </li>
                 <li>
-                 <i class="fa fa-gg-circle" aria-hidden="true"></i>
+                 <i class="fa fa-gg-circlet" aria-hidden="true"></i>
                 ” Optimizing of Search with using TOPSIS Algorithm in Internet Social Networks’’ authors:M R FadaviAmiri,Yasin Farmani ,Sina Rahimi ,Shomal university of Amol, Amol ,Iran ,international conference on nonlinear modeling and Optimization 28,29 August 2012;
                 </li>
+                </ul>
+             <h2><i class="fa fa-2x fa-certificate" style="position:relative;top:10px;"></i>  Certificate List:</h2>
+             <ul class="col-l12">           
+               <li class="col-l4 CentreAlighn"><img alt="accessability" src="stylesheets/webAccess.jpg"  width="400px" height="200px" /></li>
+               <li class="col-l4 CentreAlighn"></li>
+               <li class="col-l4 CentreAlighn"></li>
              </ul>
           </div>
 		</div>
@@ -182,15 +189,15 @@
            <div class="col-l8">
            	<div class="col-l12">
              <label>Email Addrss</label>
-              <input type="text" class="col-l12 txtbox" />
+              <input id="email" type="text" class="col-l12 txtbox" />
             </div>
            	<div class="col-l12">
                  <label>Full Name</label>
-              <input type="text" class="col-l12 txtbox" />
+              <input id="name" type="text" class="col-l12 txtbox" />
             </div>
            	<div class="col-l12">
             <label>Text</label>
-            <textarea type="text" class="col-l12 txtbox" rows="10"></textarea>
+            <textarea id="message" type="text" class="col-l12 txtbox" rows="10"></textarea>
             </div>         
               
                 <div class="col-l12" >
@@ -204,8 +211,8 @@
 	 </div>
 	<div class="col-l12 footer">
 		<div class="col-l6 SocialButtons">
-			<i class="fa fa-facebook"></i>
-			<i class="fa fa-linkedin"></i>
+			<a href="https://www.facebook.com/yasin.farmani"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.linkedin.com/in/yasin-farmani-93a20a98"><i class="fa fa-linkedin"></i></a>
 			<i class="fa fa-telegram"></i>
 			<i class="fa fa-whatsapp"></i>
 			<i class="fa fa-instagram"></i>
@@ -216,7 +223,15 @@
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
-		 
+		 $('.fa-telegram,.fa-whatsapp').click(function(){
+			    alert('+989177876980');
+			 });
+		 $('.fa-instagram').click(function(){
+			    alert('userName: yashinnhl');
+			 });
+			  $('.fa-google-plus').click(function(){
+			    alert('Email: yashin.nhl@gmail.com');
+			 });
 		});
 		  $(window).scroll(function (event) {
                     var scroll = $(window).scrollTop();
@@ -275,7 +290,14 @@
                              }, 500);
 		    }
 		    });
-			
+			$('#menuSandwitch').click(function(){
+				if ($(window).width() <= 776){	
+		           	 $('.mainMenu').toggleClass('block');
+				 $('.mainMenu li').toggleClass('block');
+				 $('.mainMenu li a').removeClass('selected');
+	          }
+		
+				});
 	</script>
 </body>
 </html>
