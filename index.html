@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Yasin Fa</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="stylesheets/stylesheet.css" rel="stylesheet" />
 	<link href="stylesheets/font-awesome.css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -80,7 +80,7 @@
                 </ul>
              <h2><i class="fa fa-2x fa-certificate" style="position:relative;top:10px;"></i>  Certificate List:</h2>
              <ul class="col-l12">           
-               <li class="col-l4 CentreAlighn"><img alt="accessability" src="stylesheets/webAccess.jpg"  width="400px" height="200px" /></li>
+               <li class="col-l4 CentreAlighn"><img alt="accessability" src="stylesheets/webAccess.jpg" style="width:100%" height="200px" /></li>
                <li class="col-l4 CentreAlighn"></li>
                <li class="col-l4 CentreAlighn"></li>
              </ul>
@@ -111,37 +111,46 @@
           
 </ul>
   <h2>Web and programming Experince:</h2>
-  <div class="col-l12 devSkill">
-     <div class="col-l4">
+  <div class="col-l12 devSkill CentreAlighn">
+     <div class="col-l3 col-m6">
         <span style="background-color:#0095A7">CSS3</span>
      </div>
-     <div class="col-l4">
+     <div class="col-l3 col-m6">
      <span style="background-color:#81B900">HTML5</span>
      </div>
-     <div class="col-l4">
+     <div class="col-l3 col-m6">
+     <span style="background-color:#BC00AA">C / C# / C++</span>
+     </div>
+     <div class="col-l3 col-m6">
      <span style="background-color:#BC00AA">C / C# / C++</span>
      </div>
   </div> 
- <div class="col-l12 devSkill">
-     <div class="col-l4">
+ <div class="col-l12 devSkill CentreAlighn">
+     <div class="col-l3 col-m6">
         <span>Javascript / Jquery</span>
      </div>
-     <div class="col-l4">
+     <div class="col-l3 col-m6">
      <span>Python</span>
      </div>
-     <div class="col-l4">
+     <div class="col-l3 col-m6">
+     <span>Node.js</span>
+     </div>
+     <div class="col-l3 col-m6">
      <span>Node.js</span>
      </div>
   </div> 
- <div class="col-l12 devSkill">
-     <div class="col-l4">
+ <div class="col-l12 devSkill CentreAlighn">
+     <div class="col-l3 col-m6">
         <span>Angular2.Js</span>
      </div>
-     <div class="col-l4">
+     <div class="col-l3 col-m6">
      <span>MongoDB</span>
      </div>
-     <div class="col-l4">
+     <div class="col-l3 col-m6">
      <span>SQL Lite</span>
+     </div>
+     <div class="col-l3 col-m6">
+     <span>Node.js</span>
      </div>
   </div> 
           </div>
@@ -292,12 +301,16 @@
 		    }
 		    });
 			$('#menuSandwitch').click(function(){
-				if ($(window).width() <= 776){	
-		           	 $('.mainMenu').toggleClass('block');
-				 $('.mainMenu li').toggleClass('block');
-				 $('.mainMenu li a').removeClass('selected');
-	          }
-		
+							
+				 if ($(window).width() <= 776){	 
+				  $('.mainMenu li').removeClass('inline-block').addClass('block');
+		            $('.mainMenu').toggleClass('block');
+				    $('.mainMenu li a').removeClass('selected').addClass('resItem');
+					$('.mainMenu').removeClass('none').addClass('block');	
+	               }//end if
+				});
+				$(document).on('click','.resItem',function(){
+					$(this).parent().parent().addClass('none').removeClass('block');
 				});
 	</script>
 </body>
