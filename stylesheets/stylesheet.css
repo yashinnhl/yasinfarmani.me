@@ -41,7 +41,13 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
-
+.plink{
+    margin-left: 71px;
+    background-color: #797979;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 10px;	
+}
 div, ul {
 	padding: 0px;
 	margin: 0px;
